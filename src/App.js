@@ -22,7 +22,7 @@ class App extends Component {
        </nav>
       
        <Switch>
-        <Route path="/login" component={Login}/>
+        <Route path="/login"  render={(props) => <Login {...props} />} />
         <Route exact path="/" component={Home}/>
         <Route path="/category" component={Category}/>
         <PrivateRoute path='/admin' component = {Admin} />

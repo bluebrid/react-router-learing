@@ -114,7 +114,7 @@ class Route extends React.Component {
     const { history, route, staticContext } = this.context.router;
     const location = this.props.location || route.location;
     const props = { match, location, history, staticContext };
-
+    debugger
     if (component) return match ? React.createElement(component, props) : null;
 
     if (render) return match ? render(props) : null;

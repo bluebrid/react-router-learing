@@ -45,7 +45,6 @@ class Link extends React.Component {
 
       const { history } = this.context.router;
       const { replace, to } = this.props;
-
       if (replace) {
         history.replace(to);
       } else {

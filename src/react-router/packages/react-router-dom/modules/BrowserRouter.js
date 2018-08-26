@@ -1,7 +1,8 @@
 import warning from "warning";
 import React from "react";
 import PropTypes from "prop-types";
-import { createBrowserHistory as createHistory } from "history";
+// import { createBrowserHistory as createHistory } from "history";
+import { createBrowserHistory as createHistory } from "../../../../history/modules";
 import Router from "./Router";
 
 /**

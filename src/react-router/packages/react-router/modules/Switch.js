@@ -63,7 +63,6 @@ class Switch extends React.Component {
         );
       }
     });
-
     return match
       ? React.cloneElement(child, { location, computedMatch: match })
       : null;
