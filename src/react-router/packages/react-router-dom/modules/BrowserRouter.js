@@ -28,7 +28,6 @@ class BrowserRouter extends React.Component {
   }
 
   render() {
-    console.log(Router)
     return <Router history={this.history} children={this.props.children} />;
   }
 }

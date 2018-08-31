@@ -264,7 +264,7 @@ const createBrowserHistory = (props = {}) => {
 
   //注册路由监听事件
   const checkDOMListeners = delta => {
-    debugger
+    // debugger
     listenerCount += delta;
 
     if (listenerCount === 1) {
@@ -290,7 +290,7 @@ const createBrowserHistory = (props = {}) => {
       isBlocked = true;
     }
 
-    return () => {
+    return () => {    
       if (isBlocked) {
         isBlocked = false;
         checkDOMListeners(-1);

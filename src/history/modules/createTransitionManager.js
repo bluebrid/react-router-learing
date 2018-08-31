@@ -9,6 +9,7 @@ const createTransitionManager = () => {
     prompt = nextPrompt;
 
     return () => {
+      debugger
       if (prompt === nextPrompt) prompt = null;
     };
   };

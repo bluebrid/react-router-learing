@@ -48,8 +48,9 @@ class Prompt extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.when) {
-      if (!this.props.when || this.props.message !== nextProps.message)
+      if (!this.props.when || this.props.message !== nextProps.message) {
         this.enable(nextProps.message);
+      }
     } else {
       this.disable();
     }
